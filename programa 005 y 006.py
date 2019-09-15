@@ -36,6 +36,7 @@ print "-"*20
 # %d : imprime en enteros
 #%f: Imprime floats
 #%s: imprime cadenas
+#%r: imprimir el cotenido de una variable en formato raw (crudo), no importa el tipo de variable
 
 print "El primer alumno tiene la calif de  %.0f y el segundo de %.0f" %(calif1,calif2)
 print "-"*20
@@ -44,3 +45,20 @@ print "-"*20
 
 #Creacion de cadena con fomato
 formato="Una variable %r, otra variable %r"
+print formato %(precio,saldo)
+print formato %(nombre,acierto)
+print formato %(total,calif1)
+print "-"*20
+
+#impresion de varias lineas al tiempo
+
+print """
+Aqui vamos a imprimir multiples lineas
+a la vez.
+Python lo permite
+"""
+
+# Python tambien tiene codigos de escape "Buscar en documentacion de python"
+print "Voy a imprimit una \\ aqui"
+print "\t Con salto de tab" 
+print "Una linea \nOtra linea"
