@@ -43,16 +43,16 @@ print "\nAfuera del while"
 #Uso del else dentro del ciclo while
 
 n=0
-m=int(raw_input("Ingresa un numero "))
+m=int(input("Ingresa un numero "))
 
 while n<10:
-    print n
+    print (n)
     if n==m:
         break
 
     n+=1
-    print "Sigo imprimiendo"
+    print ("Sigo imprimiendo")
 else:
-    print "No encontre el numero"
+    print ("No encontre el numero")
 
-print "\nAfuera del while"
+print ("\nAfuera del while")
