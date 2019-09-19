@@ -47,4 +47,4 @@ print(lista3)
 
 #Slicing, recortar lista y obtener una sublista
 
-lista4=lista2[3:9]
+lista4=lista2[3:9] #Limite superior no es inclusive
