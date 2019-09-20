@@ -51,10 +51,11 @@ del mascolores
 #Opercaiones de conjuntos
 
 a={1,2,3,4,5,6}
-b={1,3,5,"perro"}
+b={1,3,5}
 c=a.difference(b)
 d=b.difference(a)
 e=a.union(b)
+f={10,11,12}
 print(c,d,e)
 print("-"*20)
 
@@ -69,6 +70,25 @@ b.discard(3)
 b.discard(9)
 
 print(b)
+print (a.intersection(d)) #Elementos comunes entre dos conjuntos
+print (a.isdisjoint(e)) #False, ya que poseen elementos en comun
+print (a.isdisjoint(f)) #True, ya que no poseen elementos en 
+
+print("-"*20)
+
+print(b.issubset(a)) #Saber si un conjunto es subconjunto de otro
+
+#SuperSet
+print (a.issuperset(b))
+print (b<a) #Subcojunto propio
+print (a<a)
+
+s={1,2,3,4,5,6,7,8,9,10,11,12}
+print (s>a) #Supercojunto de a 
+
+#Uso del popm obtiene y remueve un elemento
+prueba=s.pop()
+
 
 #d.remove(9) , marca un error al no encontrar el elemento dentro del conjunto
  
