@@ -14,10 +14,11 @@ def mostrar(numero): #Variable de entrada
 def adicionar(nombre):
     nombre="Hola "+nombre
     print(nombre)
-    
-def sumar2(a,b):
+
+#Uso de return     
+def suma(a,b):
     r=a+b
-    print(r)
+    return r
   
 def multi(a,b=3): #b es un parametro opcional, que se debe de inicializar
     r=a*b
@@ -28,6 +29,13 @@ def muestra(a=1,b=2,c=3):
     print ("B es ", b)
     print ("C es ", c)
 
+#Funciones con numero arbitrarios de parametros
+def sumatoria(a,*mas): #Cuando un parametro posee un arteriscom queire decir que puede tener n paramatros
+    sum=a
+    if len(mas)>0:
+        for n in mas:
+            sum+=n
+    print(sum)
     
 #Codigo del programa
 mostrar(1)
@@ -35,14 +43,21 @@ mostrar(2)
 mostrar(3)
 print(mostrar.__doc__)
 
-
 adicionar("Shago")
-sumar2(100,2)
+suma(100,2)
 
 multi(5)
 multi(4,8)
 
 #Uso de los keywords
-muestra(b=6,a=8,c=20) #No importa el orden de como se entran las variables a la funcion
-muestra(b=20)
+print (muestra(b=6,a=8,c=20)) #No importa el orden de como se entran las variables a la funcion
+print (muestra(b=20))
 
+sumatoria(5)
+sumatoria(5,3,1)
+sumatoria(1,2,3,4,5)
+
+s=suma(9,2)
+print(s)
+
+print ('-'*20)

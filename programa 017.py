@@ -8,6 +8,9 @@ Created on Thu Sep 19 21:16:54 2019
 #Uso de shallow copy y deep copy (Superficiales y profundas)
 
 from copy import deepcopy #Libreria necesaria para la copia profunda
+import numpy as np
+
+
 
 nombres1=["Nicosio","Susana"]
 nombres2=nombres1
@@ -44,3 +47,17 @@ fonemas2[3][0]="DA"
 fonemas2=deepcopy(fonemas1)
 fonemas2[3][0]="PA"
 fonemas2.append([1,5,6])
+
+QR10 = [1, 2, 3]
+QR20 = [1, 5, 3]
+QR11 = [1, 2, 3]
+QR21 = [1, 2, 3]
+
+QR10 = np.array(QR10,dtype=float)
+QR20 = np.array(QR20,dtype=float)
+QR11 = np.array(QR11,dtype=float)
+QR21 = np.array(QR21,dtype=float)
+
+QR10.dot(QR20)
+
+print (QR10)
