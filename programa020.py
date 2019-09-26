@@ -6,7 +6,7 @@
 #Path de default
 
 
-import Modulo1 as md1 #Importacion normal
+import Modulo1 as md1
 #from Modulo1 import multi #importacion de una funcion desde un modulo
 from Modulo1 import *
 
