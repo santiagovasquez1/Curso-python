@@ -26,9 +26,6 @@ def fibonaccirecursivo2(n):
         calculados[n]=fibonaccirecursivo2(n-1)+fibonaccirecursivo2(n-2)
         return calculados[n]
 
-
-
-
 print ("Iterativo", fibonacciIterativo(35))
 print ("Recursivo",fibonacciRecursivo(35))
 print ("Memoizado",fibonaccirecursivo2(35))
